@@ -122,8 +122,8 @@ public class ConnectorLoaderService implements ITransformationService {
         }
         return List.of(new Resource(IModuleLayerManager.Layer.GAME, List.of(
             FabricASMFixer.provideGeneratedClassesJar(),
-            ModuleLayerMigrator.moveModule(AUTHLIB_MODULE),
-            ModuleLayerMigrator.moveModule(BRIGADIER_MODULE)
+            ModuleLayerMigrator.moveModule(AUTHLIB_MODULE)
+            //ModuleLayerMigrator.moveModule(BRIGADIER_MODULE)
         )));
     }
 
