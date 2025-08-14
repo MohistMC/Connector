@@ -58,7 +58,7 @@ public class ConnectorLoader {
                 loader.invokeEntrypoints("server", DedicatedServerModInitializer.class, DedicatedServerModInitializer::onInitializeServer);
             }
 
-            LazyEntityAttributes.release();
+            //LazyEntityAttributes.release();
             finishedLoading = true;
         } catch (Throwable t) {
             ConnectorEarlyLoader.addGenericLoadingException(t, "Encountered error during early mod loading");
